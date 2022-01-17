@@ -11,10 +11,9 @@ public class BaseTest {
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get("https://www.swisslife.com/");
 
-        //1 - Maximize the window
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
 
         //2 - Fullscreen mode
         //driver.manage().window().fullscreen();
